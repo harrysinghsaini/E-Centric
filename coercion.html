@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script src="lib1.js"></script>
+        <script src="lib2.js"></script>
+        <script src="app.js"></script>
+        <script>
+            var a = 1;
+            var b = '1';
+            if (a===b){
+                console.log("They have same value");
+            }else{
+                console.log("Values does not match");
+            }
+            function greet(name){
+                // OR || operator has higher precedence that assignment = operator, || executes first - left to right
+                // if the name is true, the value will be set otherwise first true value will be set
+                name = name || '<Enter your name here>';
+                console.log("Hello "+name);
+            }
+            //invoking fucntion with parameter
+            greet("Tej");
+            //invoking function without any parameter
+            greet();
+            //passing false value
+            greet(0);
+            
+        </script>
+    </body>
+</html>
